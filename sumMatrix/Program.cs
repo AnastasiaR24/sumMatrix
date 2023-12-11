@@ -12,7 +12,7 @@ namespace sumMatrix
         static void Main(string[] args)
         {
             int rowsA, colsA, rowsB, colsB;
-
+      // Запрашиваем у пользователя размеры мартиц
             Console.WriteLine("Введите количество строк первой матрицы:");
             int m1 = 0;
             if (!int.TryParse(Console.ReadLine(), out rowsA))
@@ -50,7 +50,7 @@ namespace sumMatrix
             int[,] matrixA = new int[rowsA, colsA];
             int[,] matrixB = new int[rowsB, colsB];
             int[,] matrixC = new int[rowsA, colsA];
-
+       // Создаются матрицы и заполняются рандомными числами
             
             Random randomA = new Random();
             Console.WriteLine("Первая матрица создана!");
@@ -63,7 +63,7 @@ namespace sumMatrix
                 }
                 Console.WriteLine();
             }
-            
+       // Сложение матриц      
             Random randomB = new Random();
             Console.WriteLine("Вторая матрица создана!");
             for (int i = 0; i < rowsB; i++)
