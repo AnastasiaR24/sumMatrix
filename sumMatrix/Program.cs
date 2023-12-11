@@ -66,15 +66,15 @@ namespace sumMatrix
        // Сложение матриц      
             Random randomB = new Random();
             Console.WriteLine("Вторая матрица создана!");
-            for (int i = 0; i < rowsB; i++)
+            for (int i = 0; i < rowsA; i++)
             {
-                for (int j = 0; j < colsB; j++)
-                {
-                    matrixB[i, j] = randomB.Next(1, 101);  // Случайные целые числа от 1 до 100
-                    Console.Write(matrixB[i, j] + " ");
-                }
-                Console.WriteLine();
-            }
+                for (int j = 0; j < colsA; j++)
+               {
+                   matrixA[i, j] = randomA.Next(1, 101);  // Случайные целые числа от 1 до 100
+                   Console.Write(matrixA[i, j] + " ");
+               }
+               Console.WriteLine();
+           }
             for (int i = 0; i < rowsA; i++)
             {
                 for (int j = 0; j < colsA; j++)
