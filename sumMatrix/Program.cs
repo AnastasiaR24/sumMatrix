@@ -44,23 +44,16 @@ for (int i = 0; i < rows; i++)
     Console.WriteLine();
 }
 // Сложение матриц
-for (int i = 0; i < rows; i++)
-{
-    for (int j = 0; j < cols; j++)
-    {
-        matrixC[i, j] = matrixA[i, j] + matrixB[i, j];
-    }
-
-}
-Console.WriteLine("Результат сложения матриц A и B: ");
-for (int i = 0; i < rows; i++)
-{
-    for (int j = 0; j < cols; j++)
-    {
-        Console.Write(matrixC[i, j] + " ");
-    }
-    Console.WriteLine();
-}
+ Console.WriteLine("Результат сложения матриц A и B: ");
+ for (int i = 0; i < rows; i++)
+ {
+     for (int j = 0; j < cols; j++)
+     {
+         matrixC[i, j] = matrixA[i, j] + matrixB[i, j];
+         Console.Write(matrixC[i, j] + " ");
+     }
+     Console.WriteLine();
+ }
 Console.ReadLine();
 
         }
